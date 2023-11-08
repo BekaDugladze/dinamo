@@ -42,9 +42,9 @@ export default class Store extends Component{
                     Every Day: 10.00-19.00</p>
                 </div>
                 <div className="media">
-                    <button onClick={this.prev}>''</button>
+                    <button onClick={this.prev}><</button>
                     <img src={this.state.src[this.state.store]} alt="Dinamo Tbilisi Media" style={{animation: this.state.anime ? 'simple 1s' : 'none'}} />
-                    <button onClick={this.next}>''</button>
+                    <button onClick={this.next}>></button>
                 </div>
             </div>
         )
