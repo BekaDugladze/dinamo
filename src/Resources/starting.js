@@ -204,19 +204,19 @@ export default class Start extends Component{
                     <li><a href='#abus'>About Us</a></li>
                     <li><a href='#team'>Team</a></li>
                     <li><a href='#academy'>Academy</a></li>
-                    <li><a href=''>History</a></li>
-                    <li><a href=''>Store</a></li>
-                    <li><a href=''>Media</a></li>
-                    <li><a href=''>Contact</a></li>
+                    <li><a href='#history'>History</a></li>
+                    <li><a href='#store'>Store</a></li>
+                    <li><a href='#store'>Media</a></li>
+                    <li><a href='#contact'>Contact</a></li>
                 </ul>
                 <ul>
                     <li><a href='#abus'>About Us</a></li>
                     <li><a href='#team'>Team</a></li>
                     <li><a href='#academy'>Academy</a></li>
-                    <li><a href=''>History</a></li>
-                    <li><a href=''>Store</a></li>
-                    <li><a href=''>Media</a></li>
-                    <li><a href=''>Contact</a></li>
+                    <li><a href='#history'>History</a></li>
+                    <li><a href='#store'>Store</a></li>
+                    <li><a href='#store'>Media</a></li>
+                    <li><a href='#contact'>Contact</a></li>
                 </ul>
                 <div className='mediaNav'>
                     <a href='#main'>
