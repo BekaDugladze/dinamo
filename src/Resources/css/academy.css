@@ -1,0 +1,52 @@
+#academy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+#academy h1{
+    color: #001F4E;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 80px 0 20px;
+}
+.academyDiv{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background: #001F4E;
+    border-radius: 25px;
+}
+.academyDiv img {
+    width: 450px;
+    margin: 0 15px 0 0;
+    border-radius: 25px 0 0 25px;
+}
+.academyDiv p{
+    color: white;
+    font-family:'Oswald',sans-serif;
+    padding: 5px 10px;
+
+}
+.academyDiv a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Bakbak One', sans-serif;
+
+}
+@media screen and (max-width:900px) and (min-width:200px){
+    .academyDiv{
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 15px;
+        margin-bottom: 100px;
+    }
+    .academyDiv img{
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+    }
+}

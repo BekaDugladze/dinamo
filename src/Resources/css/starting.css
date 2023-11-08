@@ -1,0 +1,298 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin: 0;
+    background: #001F4E;
+}
+.header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.header ul li{
+    list-style: none;
+    margin: 5px 15px 5px 0;
+}
+.header ul li a{
+    color: white;
+    color: #FFF;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px hsla(235, 30%, 90%, 0.80);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #001F4E;
+    border-radius: 10px;
+}
+
+.header ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+
+.header ul li a:hover::after{
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background: #001F4E;
+    width: 80%;
+}
+
+@keyframes simple {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes height {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.main img{
+    width: 100%;
+    height: 500px;
+    animation: simple 0.5s ;
+    transition: 1s;
+}
+.main h1{
+    color: #001F4E;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+    padding: 0 15px;
+    min-width: 100px;
+}
+.main-text{
+    display: flex;
+    flex-direction: row;
+    background: white;
+    width: 50%;
+    padding: 15px 0;
+    justify-content: space-around;
+}
+.logo{
+    width: 75px !important;
+    height: auto !important;
+    margin: 0 25px 0 15px;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background: #001F4E;
+}
+.teamMember{
+    background: #001F4E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 0;
+}
+.teamMember img{
+    width: 200px;
+    margin: 15px 40px 0 40px;
+}
+.teamMember h1{
+    color: #FFF;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px 0 10px 0;
+}
+.teamMember h2{
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: 'Unlock', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+}
+.teamMember h3 {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: 'Salsa', cursive;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.afterMain{
+    display: flex;
+    flex-direction: row;
+}
+#homeTeam{
+    width: 55px;
+    height: 55px;
+}
+.homeTeam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 15px;
+    text-align: center;
+}
+.homeTeam p {
+    color:#001F4E;
+    margin: 5px;
+    padding: 0;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.teams{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nextMatch h1{
+    text-align: center;
+    margin: 0;
+}
+.nextMatch{
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    background: white;
+    border-radius: 25px;
+    border: #001F4E 1px solid;
+}
+.mediaNav{
+    display: none;
+}
+#mediaUl{
+    display: none
+}
+
+
+
+@font-face {
+    font-family: 'sanet';
+    src: url('./sanet.ttf');
+}
+
+.simple {
+    transition: 0.5s;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+
+  @media screen and (max-width:900px) and (min-width:200px){
+    .cont{
+        flex-direction: column;
+    }
+    .main{
+        width: 100%;
+    }
+    .main img{
+        height: 300px;
+    }
+    .header ul{
+        display: none;
+        flex-direction: column; 
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        padding: 0;
+    }
+    .header ul li{
+        margin: 20px 0;
+    }
+    .main-text{
+        width: 100%;
+    }
+    .afterMain{
+        flex-direction: column;
+    }
+    .nextMatch{
+        position: static;
+        margin: 10px 0;
+    }
+    .teamMember{
+        padding: 0 0 50px 0;
+    }
+    .header{
+        top: auto;
+        bottom: 0;
+        flex-direction: column;
+    }
+    .mediaNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+    .mediaNav img{
+        background: white;
+        width: 70px;
+        border-radius: 75%;
+        padding: 10px;
+        margin: 5px 0;
+    }
+    .mediaNav span {
+        scale: 1.9;
+        color: white;
+    }
+    .mediaNav button{
+        background: none;
+        border: none;
+    }
+  }

@@ -1,0 +1,88 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #001F4E;
+    margin: 80px 0 0 0;
+}
+#contact h1{
+    color: white;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.contact h2{
+    color: white;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.contact p{
+    color: white;
+    font-family:'Oswald',sans-serif;
+    text-align: center;
+}
+.contact a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Bakbak One', sans-serif;
+}
+.social{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    padding: 20px 0;
+}
+.social a{
+    margin: 0 15px;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 25px
+}
+.author img {
+    width: 100px;
+    height: 100px;
+    background: white;
+    padding: 5px;
+    border-radius: 75%;
+    margin: 0 20px;
+}
+.author p{
+    color: white;
+    font-family:'Oswald',sans-serif;
+    text-align: center;
+}
+.author a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Bakbak One', sans-serif;
+}
+
+
+@media screen and (max-width:900px) and (min-width:200px){
+    #contact{
+        padding-bottom: 100px;
+    }
+    .author img{
+        display: none;
+    }
+}

@@ -1,0 +1,165 @@
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs h1{
+    margin: 5% 0;
+    color: #001F4E;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.infoAbout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: auto;
+    width: 100%;
+}
+.infoAbout ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #001F4E;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.infoAbout ul li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    transition: 0.3s;
+}
+.infoAbout ul li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    color: #FFF;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px 10px;
+    margin: 5px 0;
+    width: 100%;
+}
+.textAbout{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 0 25px 25px 25px;
+    background: #001F4E;
+}
+.textAbout img{
+    width: 100%;
+    border-radius: 0 25px 0 0;
+}
+.textAbout p{
+    width: fit-content;
+    font-size: 14px;
+    color: white;
+    padding: 5px 15px;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+.divAbout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.staffAbout{
+    border-radius: 25px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    background: #001F4E;
+    padding: 0;
+    margin: 30px;
+    max-width: 200px;
+}
+.staffAbout img{
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+.staffAbout h1{
+    padding: 5px 10px;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: white;
+    width: 100%;
+    text-align: center;
+}
+.staffAbout p{
+    width: 50%;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+.divAbout img {
+    width: 100%;
+}
+.manual{
+    color: #001F4E;
+    padding: 5px 10px;
+    background: none;
+    border: #001F4E 1px solid;
+    border-radius: 75%;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.arenaP{
+    background: #001F4E;
+    margin: 0;
+    padding: 5px 10px;
+    color: #FFF;
+    border-radius: 0 0 25px 25px;
+}
+.teamDivab{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    overflow: auto;
+    flex-wrap: nowrap;
+    padding: 15px 0;
+}
+@media screen and (max-width:900px) and (min-width:200px){
+    .infoAbout{
+        display: flex;
+        flex-direction: column;
+    }
+    .textAbout{
+        width: 100%;
+        border-radius: 0;
+    }
+    .textAbout img{
+        border-radius: 0;
+    }
+    .divAbout{
+        width: 100%;
+        flex-direction: row;
+    }
+    .aboutUs h1 {
+        margin: 70px 0;
+    }
+    .teamDivab{
+        width: 100%;
+    }
+}
