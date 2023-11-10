@@ -189,7 +189,7 @@
     line-height: normal;
 }
 .afterMain{
-    justify-content: space-betweeen;
+    justify-content: space-between;
 }
 .teams{
     display: flex;
