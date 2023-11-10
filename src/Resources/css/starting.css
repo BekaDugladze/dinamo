@@ -188,6 +188,9 @@
     font-weight: 400;
     line-height: normal;
 }
+.afterMain{
+    justify-content: space-betweeen;
+}
 .teams{
     display: flex;
     flex-direction: row;
@@ -198,12 +201,9 @@
     margin: 0;
 }
 .nextMatch{
-    position: absolute;
     right: 15px;
     bottom: 0;
     background: white;
-    border-radius: 25px;
-    border: #001F4E 1px solid;
 }
 .mediaNav{
     display: none;
